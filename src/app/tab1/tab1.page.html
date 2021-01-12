@@ -12,6 +12,9 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+    <ion-item *ngFor="let restaurant of restaurants" (click)="onClick(restaurant.userID)">
+      <ion-label>{{restaurant.restaurantName}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

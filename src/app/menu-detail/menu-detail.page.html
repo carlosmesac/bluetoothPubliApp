@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{menu.menuName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <img src="{{menu.firstImageURL}}" alt="" style="text-align: center;">
+      <ion-card-title>{{menu.first}}</ion-card-title>
+      <ion-card-subtitle>Primer Plato</ion-card-subtitle>
+
+    </ion-card-header>
+  
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="{{menu.secondImageURL}}" alt="" style="text-align: center;">
+      <ion-card-title>{{menu.second}}</ion-card-title>
+      <ion-card-subtitle>Segundo Plato</ion-card-subtitle>
+    </ion-card-header>
+  
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <img src="{{menu.dessertImageURL}}" alt="" style="text-align: center;">
+      <ion-card-title>{{menu.dessert}}</ion-card-title>
+      <ion-card-subtitle>Postre</ion-card-subtitle>
+
+    </ion-card-header>
+  
+  </ion-card>
+  
+ 
+  
+  <ion-card>
+    <ion-item  class="ion-activated">
+      <ion-icon name="cash-outline"></ion-icon>     
+     <ion-label style="margin-left: 5px;">  {{menu.price}} €</ion-label>
+    </ion-item>
+  </ion-card>
+</ion-content>
